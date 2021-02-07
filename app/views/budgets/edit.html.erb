@@ -1,0 +1,31 @@
+<h1>Edit this Budget Entry</h1>
+
+<%= form_with(model: @budget_entry) do | form | %>
+    <div class="field">
+        <%= form.label :expense_category %>
+        <%= form.text_field :expense_category %>
+    </div>
+    <div class="field">
+        <%= form.label :date %>
+        <%= form.text_field :date %>
+    </div>
+    <div class="field">
+        <%= form.label :payment_method %>
+        <%= form.text_field :payment_method %>
+    </div>
+    <div class="field">
+        <%= form.label :site %>
+        <%= form.text_field :site %>
+    </div>
+    <div class="field">
+        <%= form.label :cost %>
+        <%= form.text_field :cost %>
+    </div>
+    <div class="field">
+        <%= form.label :notes %>
+        <%= form.text_field :notes %>
+    </div>
+    <div class="actions">
+        <%= form.submit %>
+    </div>
+<% end %>

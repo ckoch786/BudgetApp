@@ -1,0 +1,23 @@
+<ul>
+    <li>
+        <%= @budget_entry.expense_category %>
+    </li>
+    <li>
+        <%= @budget_entry.notes %>
+    </li>
+    <li>
+        <%= @budget_entry.cost %>
+    </li>
+    <li>
+        <%= @budget_entry.site %>
+    </li>
+    <li>
+        <%= @budget_entry.date %>
+    </li>
+    <li>
+        <%= @budget_entry.payment_method %>
+    </li>
+    <li>
+        <%= link_to "Edit", edit_budget_path(@budget_entry) %>
+    </li>
+</ul>

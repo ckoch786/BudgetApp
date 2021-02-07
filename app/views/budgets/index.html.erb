@@ -1,0 +1,29 @@
+<h1>Budget Entries</h1>
+
+<%= link_to "Add new Entry", new_budget_path %>
+
+<% @budget_entries.each do |budget_entry| %>
+    <ul>
+        <li>
+            <%= link_to budget_entry.expense_category, budget_path(budget_entry) %>
+        </li>
+        <li>
+            <%= budget_entry.notes %>
+        </li>
+        <li>
+            <%= budget_entry.cost %>
+        </li>
+        <li>
+            <%= budget_entry.site %>
+        </li>
+        <li>
+            <%= budget_entry.date %>
+        </li>
+        <li>
+            <%= budget_entry.payment_method %>
+        </li>
+        <li>
+            <%= link_to "Edit", edit_budget_path(budget_entry) %>
+        </li>
+    </ul>
+<% end %>
